@@ -5,49 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manasvi Khandelwal</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Manasvi Khandelwal — CS + Math @ UW–Madison. Software Engineering + ML." />
   </head>
+
   <body>
-    <header class="container">
-      <h1>Manasvi Khandelwal</h1>
-      <p>Computer Science + Math @ UW–Madison • SWE / ML</p>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="logo" href="#top">MK</a>
+
+        <nav class="links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="Manasvi_Khandelwal_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="card">
-          <h3>CompileMyDegree</h3>
-          <p>Degree-planning web app with prerequisite-aware scheduling.</p>
-          <a href="https://github.com/manasvik06/compileMyDegree" target="_blank" rel="noreferrer">GitHub</a>
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <p class="kicker">CS + Math @ UW–Madison • SWE / ML</p>
+            <h1>
+              Hi, I’m <span class="accent">Manasvi</span> —
+              I build clean, scalable products and data-driven systems.
+            </h1>
+            <p class="sub">
+              I’m interested in software engineering and applied ML. Recently: degree-planning tools, mobile apps,
+              and systems that make user workflows faster and smarter.
+            </p>
+
+            <div class="cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="quick">
+              <a href="https://github.com/manasvik06" target="_blank" rel="noreferrer">GitHub</a>
+              <span class="dot">•</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <span class="dot">•</span>
+              <a href="mailto:YOUR_EMAIL@wisc.edu">YOUR_EMAIL@wisc.edu</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+              <img class="avatar" src="headshot.jpg" alt="Portrait of Manasvi Khandelwal" />
+            </div>
+
+            <div class="skills-card">
+              <h3>Skills</h3>
+              <div class="pill-grid">
+                <span class="pill">React</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">Express</span>
+                <span class="pill">Java</span>
+                <span class="pill">Python</span>
+                <span class="pill">SQL</span>
+                <span class="pill">Git</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">Linux/Bash</span>
+                <span class="pill">System Design (basics)</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-          <h3>Student IT Intern — CALS IT</h3>
-          <p>Support labs, troubleshoot systems, imaging, asset management, ticketing.</p>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section-inner">
+          <h2>Experience</h2>
+          <p class="section-sub">A snapshot of the roles where I shipped, supported, and led.</p>
+
+          <div class="timeline">
+            <div class="item">
+              <div class="item-top">
+                <h3>Student IT Intern — CALS IT</h3>
+                <span class="meta">UW–Madison • (Dates)</span>
+              </div>
+              <ul>
+                <li>Provided technical support across labs; resolved hardware/software/network issues quickly.</li>
+                <li>Performed imaging, setup, and maintenance in Mac + Windows environments.</li>
+                <li>Worked with ticketing + asset management workflows to track issues and equipment.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-top">
+                <h3>Frontend Developer — iSongly</h3>
+                <span class="meta">(Team/Org) • (Dates)</span>
+              </div>
+              <ul>
+                <li>Built frontend features and collaborated across backend/frontend to deliver releases.</li>
+                <li>Focused on clean UI, reliable state management, and maintainable components.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-top">
+                <h3>Leadership — dotData (Data Science Club)</h3>
+                <span class="meta">UW–Madison • (Dates)</span>
+              </div>
+              <ul>
+                <li>Coordinated events/newsletters and helped plan large-scale programming (e.g., hackathon).</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a> •
-          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a> •
-          <a href="https://github.com/manasvik06" target="_blank" rel="noreferrer">GitHub</a>
-        </p>
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-inner">
+          <h2>Projects</h2>
+          <p class="section-sub">A few things I’ve built recently.</p>
+
+          <div class="grid">
+            <article class="card">
+              <h3>CompileMyDegree</h3>
+              <p>
+                Interactive degree-planning website with a custom REST API for 40+ CS courses and a prerequisite-aware
+                scheduling algorithm that generates multi-semester plans.
+              </p>
+              <div class="tags">
+                <span>React</span><span>Node</span><span>Express</span><span>REST API</span>
+              </div>
+              <div class="card-links">
+                <a class="btn small" href="https://github.com/manasvik06/compileMyDegree" target="_blank" rel="noreferrer">GitHub</a>
+                <!-- Add a live demo if you have one -->
+                <!-- <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Live</a> -->
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>SoundScape</h3>
+              <p>
+                Smart navigation + mood-adaptive playlists combining directions, environment context, and Spotify-based music
+                personalization.
+              </p>
+              <div class="tags">
+                <span>React Native</span><span>APIs</span><span>Spotify</span>
+              </div>
+              <div class="card-links">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>(Your Next Project)</h3>
+              <p>Add one more project that shows depth: systems, ML, or a polished full-stack app.</p>
+              <div class="tags">
+                <span>Java</span><span>Python</span><span>SQL</span>
+              </div>
+              <div class="card-links">
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Details</a>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="section-inner">
+          <h2>Contact</h2>
+          <p class="section-sub">Open to internships and collaborations. Best way to reach me:</p>
+
+          <div class="contact-box">
+            <a class="btn primary" href="mailto:YOUR_EMAIL@wisc.edu">Email Me</a>
+            <a class="btn" href="https://www.linkedin.com/in/manasvi-khandelwal-21416a281/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/manasvik06" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <p class="fine">
+            Prefer a form? You can add Formspree later, but email is usually fastest.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <small>© <span id="year"></span> Manasvi Khandelwal</small>
+        </div>
+      </footer>
     </main>
-
-    <footer class="container">
-      <small>© <span id="year"></span> Manasvi Khandelwal</small>
-    </footer>
 
     <script src="script.js"></script>
   </body>
