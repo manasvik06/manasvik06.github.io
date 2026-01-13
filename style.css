@@ -241,14 +241,6 @@ body {
     box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
   }
   
-  /* Responsive */
-  @media (max-width: 900px){
-    .exp-media img{
-      max-width: 100%;
-      height: 160px;
-    }
-  }
-  
   
   /* ===== UW image: light banner hero background ===== */
   .hero-bg {
