@@ -18,25 +18,96 @@
 
   <main class="page">
     <h1>Projects</h1>
-
-    <div class="project-grid">
-      <div class="project">
-        <h3>CompileMyDegree</h3>
-        <p>
-          Degree-planning web app with a custom REST API and a prerequisite-aware
-          scheduling algorithm that generates multi-semester plans.
-        </p>
-        <a href="https://github.com/manasvik06/compileMyDegree" target="_blank">GitHub</a>
+    <p class="section-sub">Selected work with demos, screenshots, and technical highlights.</p>
+  
+    <!-- CompileMyDegree -->
+    <section id="compilemydegree" class="project-section">
+      <div class="project-header">
+        <div>
+          <h2>CompileMyDegree</h2>
+          <p class="muted">React • Node.js • Express • REST API</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn" href="https://github.com/manasvik06/compileMyDegree" target="_blank">GitHub</a>
+        </div>
       </div>
-
-      <div class="project">
-        <h3>SoundScape</h3>
-        <p>
-          AI-powered navigation app that generates mood-adaptive Spotify playlists
-          using real-time context like traffic and weather.
-        </p>
+  
+      <p>
+        An interactive degree-planning web app that helps students plan multi-semester schedules while respecting prerequisites
+        and credit constraints. :contentReference[oaicite:2]{index=2}
+      </p>
+  
+      <div class="bullets">
+        <div class="bullet-card">
+          <h3>What it does</h3>
+          <ul>
+            <li>Dynamic CS course catalog with prerequisite mappings</li>
+            <li>Generates a semester-by-semester plan from user constraints</li>
+            <li>Enforces dependencies + credit limits + progression rules</li>
+          </ul>
+        </div>
+        <div class="bullet-card">
+          <h3>How it works</h3>
+          <ul>
+            <li>Builds a dependency graph of courses</li>
+            <li>Filters eligible courses each semester</li>
+            <li>Allocates courses while meeting credit targets</li>
+          </ul>
+        </div>
       </div>
-    </div>
+  
+      <h3 class="subhead">Demo Video</h3>
+        <p> Will be uploaded soon !</p>
+    </section>
+  
+    <!-- SoundScape -->
+    <section id="soundscape" class="project-section">
+      <div class="project-header">
+        <div>
+          <h2>SoundScape</h2>
+          <p class="muted">React Native (Expo) • Spotify • Mapbox • OpenAI • OpenWeather • Google Places</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn" href="https://github.com/manasvik06/SoundScape" target="_blank">GitHub</a>
+        </div>
+      </div>
+  
+      <p>
+        A mobile navigation app that adapts Spotify playlists using mood, traffic, weather, trip duration, and real-time changes
+        during the route. Includes voice-based mood detection and a demo mode for hackathon judging. :contentReference[oaicite:3]{index=3}
+      </p>
+  
+      <div class="bullets">
+        <div class="bullet-card">
+          <h3>Key features</h3>
+          <ul>
+            <li>AI-generated playlists (variable length based on trip)</li>
+            <li>Voice mood detection + fallback speech options</li>
+            <li>Traffic-aware routing + weather context</li>
+            <li>Demo mode with simulated GPS trip</li>
+          </ul>
+        </div>
+        <div class="bullet-card">
+          <h3>Tech details</h3>
+          <ul>
+            <li>Spotify OAuth + library access + fallback tracks</li>
+            <li>Mapbox Directions API for routing + geometry</li>
+            <li>Secure token storage (Expo SecureStore)</li>
+          </ul>
+        </div>
+      </div>
+  
+      <h3 class="subhead">Screenshots</h3>
+      <div class="gallery">
+        <img src="soundscape-1.jpg" alt="SoundScape screenshot 1" />
+        <img src="soundscape-2.jpg" alt="SoundScape screenshot 2" />
+        <img src="soundscape-3.jpg" alt="SoundScape screenshot 3" />
+        <img src="soundscape-4.jpg" alt="SoundScape screenshot 4" />
+      </div>
+    </section>
+  
+    <section class="resume">
+      <a href="Manasvi_Khandelwal_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
+    </section>
   </main>
-</body>
-</html>
+  
