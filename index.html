@@ -4,96 +4,431 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manasvi Khandelwal</title>
+  <meta name="description" content="Manasvi Khandelwal — Computer Science, Math, and Data Science student at UW–Madison." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
   <header class="nav">
-    <a href="index.html" class="logo">MK</a>
+    <a href="#top" class="logo">MK</a>
     <nav>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="home">
-   <!-- HERO (with UW–Madison background) -->
-<section class="profile hero-bg">
-    <div class="hero-overlay">
-      <img src="headshot.jpg" alt="Manasvi Khandelwal" class="avatar" />
-  
-      <h1>Hi, I’m <span class="accent">Manasvi Khandelwal</span></h1>
-  
-      <p class="subtitle">
-        Computer Science, Math, and Data Science student at the
-        <strong>University of Wisconsin–Madison</strong>
-      </p>
-  
-      <p class="bio">
-        I’m a Computer Science and Mathematics student interested in software engineering,
-        data science, and machine learning. I enjoy building full-stack applications and
-        applying ML to meaningful problems—from research to student-focused tools.
-      </p>
-  
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal">CS · Math · Data Science — UW–Madison</p>
+        <h1 class="reveal">Hi, I’m <em>Manasvi</em><br />Khandelwal.</h1>
+        <p class="lede reveal">
+          I’m a Computer Science and Mathematics student interested in software engineering,
+          data science, and machine learning. I enjoy building full-stack applications and
+          applying ML to meaningful problems—from research to student-focused tools.
+        </p>
+        <div class="hero-links reveal">
+          <a class="btn primary" href="#experience">See my work</a>
+          <a class="btn" href="Manasvi_Khandelwal_Resume.pdf" target="_blank">Resume</a>
+          <a class="text-link" href="https://www.linkedin.com/in/manasvi-khandelwal-21416a281/" target="_blank">LinkedIn ↗</a>
+        </div>
+      </div>
+      <figure class="hero-photo reveal">
+        <img src="headshot.jpg" alt="Manasvi Khandelwal" />
+      </figure>
+    </section>
+
+    <!-- ================= INTERLUDE ================= -->
+    <figure class="band reveal">
+      <img src="uw-madison.jpg" alt="University of Wisconsin–Madison campus" loading="lazy" />
+      <figcaption>Based in Madison, Wisconsin</figcaption>
+    </figure>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section">
+      <header class="section-head reveal">
+        <span class="num">01</span>
+        <h2>Experience</h2>
+        <p>Research, engineering, leadership, IT, and teaching.</p>
+      </header>
+
+      <ol class="timeline">
+        <!-- GE HealthCare -->
+        <li class="entry reveal">
+          <p class="when">May 2026 – Present</p>
+          <div class="what">
+            <h3>Software Engineering Intern</h3>
+            <p class="org">GE HealthCare · Waukesha, WI</p>
+            <ul>
+              <li>
+                Developed persistence for 76 RESTful microservices running on Kubernetes in
+                the MR (Magnetic Resonance) imaging system, using Java Spring Boot and
+                PostgreSQL to replace in-memory state with durable storage.
+              </li>
+              <li>
+                Designed schema and data access layers to integrate persistence into the
+                existing microservice architecture, accounting for RabbitMQ-based service
+                notifications alongside service contracts and runtime behavior.
+              </li>
+              <li>
+                Deployed and debugged microservices directly on the Linux systems hosting
+                production MR scanners, diagnosing runtime and environment issues on live
+                hardware to validate persistence changes.
+              </li>
+              <li>
+                Built and maintained CI/CD pipelines in Jenkins to automate build, test, and
+                deployment of microservices across the fleet.
+              </li>
+            </ul>
+            <img src="ge-healthcare.jpg" alt="GE Healthcare logo" class="entry-img logo-img" loading="lazy" />
+          </div>
+        </li>
+
+        <!-- Dell Capstone -->
+        <li class="entry reveal">
+          <p class="when">Fall 2026</p>
+          <div class="what">
+            <h3>Software Engineering Capstone</h3>
+            <p class="org">Dell · Remote</p>
+            <ul>
+              <li>
+                Designing a library of AI-agent skills that let coding agents (Claude Code,
+                Copilot, Cursor) safely operate Kerberator, a Kubernetes operator that issues
+                Kerberos identities to cluster workloads.
+              </li>
+              <li>
+                Building an evaluation rubric to benchmark multiple coding agents on real
+                operational and diagnostic tasks, measuring where structured agent skills
+                improve reliability over zero-shot execution.
+              </li>
+              <li>
+                Collaborating with a six-person team in weekly Agile sprints, tracking work
+                in Jira to coordinate skill design and evaluation.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- AI Research Intern -->
+        <li class="entry reveal">
+          <p class="when">May 2026 – Present</p>
+          <div class="what">
+            <h3>AI Research Intern</h3>
+            <p class="org">Summer of AI Laboratory, UW–Madison · Madison, WI</p>
+            <ul>
+              <li>
+                Prototyping an AI-powered PCOS care tool that converts patient intake data
+                into structured clinical summaries and visit-prep guidance.
+              </li>
+              <li>
+                Designing LLM workflows for symptom intake, appointment preparation, and
+                evidence-grounded patient education.
+              </li>
+              <li>
+                Researching healthcare AI constraints including HIPAA, consent-based data
+                collection, and safe boundaries around diagnosis/treatment advice.
+              </li>
+              <li>
+                Exploring Apple Health integration for user-authorized lifestyle signals
+                such as steps, exercise, weight, sleep, and heart rate.
+              </li>
+              <li>
+                Built MyPMOS as a SAIL AI Lab Program intern, interviewing 6 clinicians to
+                translate clinical gaps into product requirements.
+              </li>
+              <li>
+                Built a RAG chatbot on Vertex AI grounded in peer-reviewed literature, and
+                shipped the app in Next.js and Supabase (Postgres, pgvector).
+              </li>
+              <li>
+                Designed a clinician-ready PDF export and cycle engine used daily by the team,
+                cutting into a diagnosis gap of 2–3 years and 3+ doctors.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Student IT Intern -->
+        <li class="entry reveal">
+          <p class="when">Sep 2025 – Present</p>
+          <div class="what">
+            <h3>Student IT Intern</h3>
+            <p class="org">College of Agricultural and Life Sciences IT · Madison, WI</p>
+            <ul>
+              <li>
+                Provided IT support for 40+ labs, resolving hardware, software, and
+                network issues through rapid troubleshooting.
+              </li>
+              <li>
+                Performed system setup, imaging, configuration, and maintenance across
+                Mac and Windows environments.
+              </li>
+              <li>
+                Handled support requests through a ticketing system and assisted with
+                asset management by tracking lab hardware inventories.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- WACM -->
+        <li class="entry reveal">
+          <p class="when">Sep 2025 – Present</p>
+          <div class="what">
+            <h3>Mentoring Chair</h3>
+            <p class="org">WACM (Women in Computing) · UW–Madison</p>
+            <ul>
+              <li>
+                Run a mentoring program connecting underclassmen with upperclassmen and
+                graduate student mentors for guidance on being a woman in computer science.
+              </li>
+              <li>
+                Help mentees find campus and department resources to succeed academically
+                and professionally.
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- dotData -->
+        <li class="entry reveal">
+          <p class="when">May 2025 – Present</p>
+          <div class="what">
+            <h3>Secretary</h3>
+            <p class="org">dotData (Data Science Club) · UW–Madison</p>
+            <ul>
+              <li>
+                Manage a weekly newsletter reaching 600+ members and coordinate logistics
+                for workshops, guest talks, and large-scale events.
+              </li>
+              <li>
+                Oversee club finances, maintain internal documentation, and lead weekly
+                executive board meetings as a primary point of contact.
+              </li>
+              <li>
+                Organize the annual MadData hackathon with 300+ participants, coordinating
+                sponsors, speakers, and campus-wide outreach.
+              </li>
+              <li>
+                Designed and am actively developing the club’s website
+                (<em>work in progress</em>):
+                <a href="https://dotdatauw.vercel.app/" target="_blank">dotdatauw.vercel.app</a>
+              </li>
+            </ul>
+            <img src="dotData-1.jpg" alt="dotData event" class="entry-img" loading="lazy" />
+          </div>
+        </li>
+
+        <!-- Math research -->
+        <li class="entry reveal">
+          <p class="when">Jan 2025 – Aug 2025</p>
+          <div class="what">
+            <h3>Research Intern</h3>
+            <p class="org">UW–Madison Math Department · Madison, WI</p>
+            <ul>
+              <li>
+                Conducted research with Prof. Sam Stechmann and postdoc Thu Le applying
+                neural networks to accelerate numerical methods for solving PDEs.
+              </li>
+              <li>
+                Designed and trained feedforward networks, CNNs, and ResNets in PyTorch
+                using spectral element data generated in MATLAB, tuning hyperparameters
+                for accuracy and stability.
+              </li>
+              <li>
+                Exported trained models to ONNX for integration with PDE solvers,
+                reducing solution error from ~10<sup>−3</sup> to ~10<sup>−4</sup>
+                without additional training cost.
+              </li>
+            </ul>
+            <img src="research-1.jpg" alt="Research poster" class="entry-img" loading="lazy" />
+          </div>
+        </li>
+
+        <!-- TA -->
+        <li class="entry reveal">
+          <p class="when">Sep 2024 – Present</p>
+          <div class="what">
+            <h3>Undergraduate Teaching Assistant</h3>
+            <p class="org">CS Dept &amp; UW Math Learning Center · Madison, WI</p>
+            <ul>
+              <li>
+                Provided academic support to 200+ students in Introduction to Computer
+                Systems (C programming, memory, assembly, debugging) and mathematics.
+              </li>
+              <li>
+                Supported programming assignments, quizzes, and exam preparation through
+                one-on-one and small-group instruction.
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <header class="section-head reveal">
+        <span class="num">02</span>
+        <h2>Projects</h2>
+        <p>Things I’ve built, and how they work.</p>
+      </header>
+
+      <!-- MyPMOS -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3>MyPMOS</h3>
+          <a class="text-link" href="https://mypmos.vercel.app" target="_blank">Live site ↗</a>
+        </div>
+        <p class="stack">Next.js · Vertex AI · Supabase</p>
+        <p class="project-desc">
+          Built as a SAIL AI Lab Program intern. I interviewed 6 clinicians to translate clinical gaps
+          into product requirements. The clinician-ready PDF export and cycle engine are used daily by
+          the team, cutting into a diagnosis gap of 2–3 years and 3+ doctors.
+        </p>
+        <div class="columns">
+          <div>
+            <h4>Key features</h4>
+            <ul>
+              <li>RAG chatbot grounded in peer-reviewed literature</li>
+              <li>Clinician-ready PDF export</li>
+              <li>Cycle engine</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tech details</h4>
+            <ul>
+              <li>Vertex AI for the RAG chatbot</li>
+              <li>App built in Next.js</li>
+              <li>Supabase (Postgres, pgvector)</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- SoundScape -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3>SoundScape</h3>
+          <a class="text-link" href="https://github.com/manasvik06/SoundScape" target="_blank">GitHub ↗</a>
+        </div>
+        <p class="stack">React Native (Expo) · Spotify · Mapbox · OpenAI · OpenWeather · Google Places</p>
+        <p class="project-desc">
+          A mobile navigation app that adapts Spotify playlists using mood, traffic, weather, trip duration, and real-time changes
+          during the route. Includes voice-based mood detection and a demo mode for hackathon judging.
+        </p>
+        <div class="columns">
+          <div>
+            <h4>Key features</h4>
+            <ul>
+              <li>AI-generated playlists (variable length based on trip)</li>
+              <li>Voice mood detection + fallback speech options</li>
+              <li>Traffic-aware routing + weather context</li>
+              <li>Demo mode with simulated GPS trip</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tech details</h4>
+            <ul>
+              <li>Spotify OAuth + library access + fallback tracks</li>
+              <li>Mapbox Directions API for routing + geometry</li>
+              <li>Secure token storage (Expo SecureStore)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="phones">
+          <img src="soundscape-1.jpg" alt="SoundScape screenshot 1" loading="lazy" />
+          <img src="soundscape-2.jpg" alt="SoundScape screenshot 2" loading="lazy" />
+          <img src="soundscape-3.jpg" alt="SoundScape screenshot 3" loading="lazy" />
+          <img src="soundscape-4.jpg" alt="SoundScape screenshot 4" loading="lazy" />
+        </div>
+      </article>
+
+      <!-- CompileMyDegree -->
+      <article class="project reveal">
+        <div class="project-head">
+          <h3>CompileMyDegree</h3>
+          <a class="text-link" href="https://github.com/manasvik06/compileMyDegree" target="_blank">GitHub ↗</a>
+        </div>
+        <p class="stack">React · Node.js · Express · REST API</p>
+        <p class="project-desc">
+          An interactive degree-planning web app that helps students plan multi-semester schedules while respecting prerequisites
+          and credit constraints.
+        </p>
+        <div class="columns">
+          <div>
+            <h4>What it does</h4>
+            <ul>
+              <li>Dynamic CS course catalog with prerequisite mappings</li>
+              <li>Generates a semester-by-semester plan from user constraints</li>
+              <li>Enforces dependencies + credit limits + progression rules</li>
+            </ul>
+          </div>
+          <div>
+            <h4>How it works</h4>
+            <ul>
+              <li>Builds a dependency graph of courses</li>
+              <li>Filters eligible courses each semester</li>
+              <li>Allocates courses while meeting credit targets</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">Demo video coming soon.</p>
+      </article>
+    </section>
+
+    <!-- ================= TOOLKIT ================= -->
+    <section id="toolkit" class="section">
+      <header class="section-head reveal">
+        <span class="num">03</span>
+        <h2>Toolkit</h2>
+        <p>What I work with most.</p>
+      </header>
+
+      <div class="toolkit reveal">
+        <div>
+          <h4>Languages</h4>
+          <p>Java · Python · C · C++ · JavaScript · SQL · R · HTML · MATLAB</p>
+        </div>
+        <div>
+          <h4>Web</h4>
+          <p>React · Node.js · Express · Spring Boot · Flask · FastAPI · .NET</p>
+        </div>
+        <div>
+          <h4>Data &amp; ML</h4>
+          <p>PyTorch · Pandas · NumPy · Scikit-learn · ONNX · PostgreSQL</p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <p>Git/GitHub · Linux/Bash · Docker · Kubernetes · RabbitMQ · Jenkins · Jira · Azure · Gradle</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact reveal">
+      <span class="num">04</span>
+      <h2>Let’s talk.</h2>
+      <p>I’m always happy to chat about internships, research, or something you’re building.</p>
+      <a class="big-link" href="mailto:manasvi.spc@gmail.com">manasvi.spc@gmail.com</a>
       <div class="hero-links">
-        <a class="link" href="mailto:manasvi.spc@gmail.com">manasvi.spc@gmail.com</a>
-        <span class="sep">•</span>
-        <a class="link" href="https://www.linkedin.com/in/manasvi-khandelwal-21416a281/" target="_blank">LinkedIn</a>
-        <span class="sep">•</span>
-        <a class="link" href="Manasvi_Khandelwal_Resume.pdf" target="_blank">Resume</a>
-      </div>
-    </div>
-  </section>
-  
-    <!-- CHECK OUT MY WORK -->
-    <section class="section">
-      <h2>Check out my work</h2>
-
-      <div class="card-grid">
-        <a href="projects.html" class="card">
-          <h3>Projects</h3>
-          <p>Full-stack apps, ML projects, and mobile experiences.</p>
-        </a>
-
-        <a href="experience.html" class="card">
-          <h3>Experience</h3>
-          <p>Research, teaching, IT, and leadership roles.</p>
-        </a>
+        <a class="btn" href="https://www.linkedin.com/in/manasvi-khandelwal-21416a281/" target="_blank">LinkedIn</a>
+        <a class="btn" href="Manasvi_Khandelwal_Resume.pdf" target="_blank">Resume</a>
       </div>
     </section>
-
-    <!-- SKILLS -->
-    <section class="section">
-      <h2>Technical Skills</h2>
-      <p class="section-sub">A focused snapshot of what I work with most.</p>
-
-      <div class="pills">
-        <span class="pill">Java</span>
-        <span class="pill">Python</span>
-        <span class="pill">C</span>
-        <span class="pill">JavaScript</span>
-        <span class="pill">React</span>
-        <span class="pill">Node.js</span>
-        <span class="pill">Express</span>
-        <span class="pill">SQL</span>
-        <span class="pill">Git/GitHub</span>
-        <span class="pill">Linux/Bash</span>
-        <span class="pill">PyTorch</span>
-        <span class="pill">Pandas/NumPy</span>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="resume">
-      <a href="Manasvi_Khandelwal_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
-    </section>
-
-    <!-- CONTACT -->
-    <footer class="contact">
-      <h2>Contact Me</h2>
-      <p><a href="mailto:manasvi.spc@gmail.com">manasvi.spc@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/manasvi-khandelwal-21416a281/" target="_blank">LinkedIn</a></p>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Manasvi Khandelwal</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
